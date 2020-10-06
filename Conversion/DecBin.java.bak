@@ -1,0 +1,24 @@
+import java.util.*;
+class DecBin 
+{
+	static String decToBin(int n)
+	{
+		String bin="";
+		do
+		{
+			int rem=n%2;
+			bin=rem+bin;
+			n=n/2;
+		}while(n!=0);
+
+		return bin;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the number");
+		int num=scan.nextInt();
+		String bin=decToBin(num);
+		System.out.println("the converted binary is"+bin);
+	}
+}

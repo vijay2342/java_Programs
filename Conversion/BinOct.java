@@ -1,0 +1,25 @@
+import java.util.*;
+class BinOct 
+{
+	static int binToOct(int n)
+	{
+		int oct=0,p=1;
+		while(n!=0)
+		{
+			int rem=n%10;
+			oct=oct+(rem*p);
+			p=p*8;
+			n=n/10;
+		}
+		return oct;
+	}
+
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the number");
+		int num=scan.nextInt();
+		int Oct=binToOct(num);
+		System.out.println("the converted decimal is"+Oct);
+	}
+}
