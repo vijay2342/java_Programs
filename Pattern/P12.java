@@ -1,0 +1,18 @@
+import java.util.*;
+class P12 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter how many lines");
+		int n=scan.nextInt();
+		for(int i=5;i>=1;i--)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+}
