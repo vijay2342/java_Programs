@@ -7,8 +7,8 @@ class ColReverse
           for(int j=0;j<arr[i].length;j++)
 		  {
 			  int temp=arr[i][j];
-			  arr[i][j]=arr[arr.length-1][j];
-			  arr[arr.length-1][j]=temp;
+			  arr[i][j]=arr[arr.length-1-i][j];
+			  arr[arr.length-1-i][j]=temp;
           }
 		}
 		return arr;
